@@ -3,6 +3,7 @@
 	"displayName": "quick-look",
 	"publisher": "pynickle",
 	"description": "have a quick look at something you need",
+	"repository": "https://github.com/pynickle/Quick-Look",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.35.0"
