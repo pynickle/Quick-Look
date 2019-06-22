@@ -4,7 +4,7 @@
 	"publisher": "pynickle",
 	"description": "have a quick look at something you need",
 	"repository": "https://github.com/pynickle/Quick-Look",
-	"version": "0.5.0",
+	"version": "0.5.1",
 	"engines": {
 		"vscode": "^1.35.0"
 	},

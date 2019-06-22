@@ -1,6 +1,10 @@
 ## Have A Quick Look!
 This tool lets you have a quick look at some website.You can press <kbd>ctrl+shift+p</kbd> to find the command.
 
+## Repository
+
+The repository for this extension is [there](https://github.com/pynickle/Quick-Look)
+
 ## Now Support
 We are collecting more website for you!
 

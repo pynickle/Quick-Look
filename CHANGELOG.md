@@ -23,3 +23,7 @@ Add rest website and markdown website for tutorial
 ## 0.5.0
 
 Add vim tutorial website
+
+## 0.5.1
+
+Change the position to column two
