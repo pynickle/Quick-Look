@@ -7,4 +7,8 @@ We are collecting more website for you!
 **Example:** 
 `which website : which title`
 - pep8 : Look PEP8
-
+- google-js-styleguide : Look js styleguide
+- runoob-notes : Look notes
+- rest-tutorial : Look ReST
+- markdown-tutorial : Look MarkDown CN
+- vim-tutorial : Look Vim

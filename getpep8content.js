@@ -1,3 +1,5 @@
+function getpep8content() {
+    return `
 <!DOCTYPE html>
 <html>
 
@@ -157,7 +159,7 @@ result = some_function_that_takes_arguments(
         should be used in preference to using a backslash for line continuation.</p>
     <p>Backslashes may still be appropriate at times. For example, long, multiple <code>with</code>-statements cannot
         use implicit continuation, so backslashes are acceptable:</p>
-    <pre><code>with open(&#39;/path/to/some/file/you/want/to/read&#39;) as file_1, \
+    <pre><code>with open(&#39;/path/to/some/file/you/want/to/read&#39;) as file_1, \\
                     open(&#39;/path/to/some/file/being/written&#39;, &#39;w&#39;) as file_2:
                 file_2.write(file_1.read())</code></pre>
     <p>(See the previous discussion on multiline if-statements_ for further thoughts on the indentation of such
@@ -756,10 +758,11 @@ __version__ = &quot;$Revision$&quot;
             <p>When catching exceptions, mention specific exceptions whenever possible instead of using a bare
                 <code>except:</code> clause.</p>
             <p>For example, use:</p>
-            <pre><code>try:
-                import platform_specific_module
-            except ImportError:
-                platform_specific_module = None</code></pre>
+            <pre><code>
+try:
+    import platform_specific_module
+except ImportError:
+    platform_specific_module = None</code></pre>
             <p>A bare <code>except:</code> clause will catch SystemExit and KeyboardInterrupt exceptions, making it
                 harder to interrupt a program with Control-C, and can disguise other problems. If you want to catch all
                 exceptions that signal program errors, use <code>except Exception:</code> (bare except is equivalent to
@@ -775,10 +778,11 @@ __version__ = &quot;$Revision$&quot;
         <li>
             <p>When binding caught exceptions to a name, prefer the explicit name binding syntax added in Python 2.6:
             </p>
-            <pre><code>try:
-                process_data()
-            except Exception as exc:
-                raise DataProcessingFailedError(str(exc))</code></pre>
+            <pre><code>
+try:
+    process_data()
+except Exception as exc:
+    raise DataProcessingFailedError(str(exc))</code></pre>
             <p>This is the only syntax supported in Python 3, and avoids the ambiguity problems associated with the
                 older comma-based syntax.</p>
         </li>
@@ -982,4 +986,10 @@ def embezzle(self, account, funds=1000000, **fake_receipts):
             </li>
         </ol>
 </body>
+
 </html>
+`
+}
+module.exports = {
+    getpep8content
+}

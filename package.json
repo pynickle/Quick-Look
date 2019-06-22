@@ -4,7 +4,7 @@
 	"publisher": "pynickle",
 	"description": "have a quick look at something you need",
 	"repository": "https://github.com/pynickle/Quick-Look",
-	"version": "0.0.1",
+	"version": "0.5.0",
 	"engines": {
 		"vscode": "^1.35.0"
 	},
@@ -12,7 +12,12 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.look-pep8"
+		"onCommand:extension.look-pep8",
+		"onCommand:extension.look-js-styleguide",
+		"onCommand:extension.look-notes",
+		"onCommand:extension.look-markdown-cn",
+		"onCommand:extension.look-rest",
+		"onCommand:extension.look-vim"
 	],
 	"main": "./extension.js",
 	"contributes": {
@@ -20,6 +25,26 @@
 			{
 				"command": "extension.look-pep8",
 				"title": "Look PEP8"
+			},
+			{
+				"command": "extension.look-js-styleguide",
+				"title": "Look js styleguide"
+			},
+			{
+				"command": "extension.look-notes",
+				"title": "Look notes"
+			},
+			{
+				"command": "extension.look-markdown-cn",
+				"title": "Look MarkDown CN"
+			},
+			{
+				"command": "extension.look-rest",
+				"title": "Look ReST"
+			},
+			{
+				"command": "extension.look-vim",
+				"title": "Look Vim"
 			}
 		]
 	},
